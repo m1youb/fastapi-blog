@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Homepage</h1>
+    {% for post in posts %}
+        <h2 class="post-title">{{ post.title }}</h2>
+        <p class="post-content-peak">{{ post.content }}</p>
+    {% endfor %}
+{% endblock content %}
