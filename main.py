@@ -8,7 +8,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 posts: list[dict] = [
     {
     "id":1,
-    "author": "Ayoub Miane",
+    "author": "Ayoub M",
     "title": "Learn SQL With Me",
     "content": "I use this list of resources to learn SQL..."
      },
