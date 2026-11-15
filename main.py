@@ -15,8 +15,8 @@ posts: list[dict] = [
     {
     "id":2,
     "author": "Jensen Huang",
-    "title": "I F*cked Up",
-    "content": "I cheated on my wife with a chinese model"
+    "title": "I did it",
+    "content": "I did things one two three"
      }
 ]
 @app.get("/", include_in_schema=False)
@@ -41,3 +41,11 @@ def get_post(post_id: int) -> dict:
         if post["id"] == post_id:
             return post
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Post not found")
+
+@app.get("/signup", include_in_schema=False)
+def signup(request: Request):
+    return templates.TemplateResponse(request, "signup.html", {"title": "Signup"})
+
+@app.get("/login", include_in_schema=False)
+def logi(request: Request):
+    return templates.TemplateResponse(request, "login.html", {"title": "Login"})

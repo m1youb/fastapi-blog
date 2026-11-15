@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h2 class="homepage">Latest articles</h2>
+    <h2 class="latest-articles">Latest articles</h2>
+    <div id="posts-container">
     {% for post in posts %}
         <div class="post-container">
             <h2>
@@ -9,4 +10,5 @@
             <p class="post-content-peak">{{ post.content }}</p>
         </div>
     {% endfor %}
+    </div>
 {% endblock content %}
