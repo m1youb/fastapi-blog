@@ -38,13 +38,12 @@ nav {
 
 #logo {
     display: inline;
-    min-width: 500px;
+    font-size: 1.5rem;
 }
 
 #left-nav,
 #right-nav {
     display: flex;
-    width: 30%;
     padding-right: 10px;
 }
 
@@ -168,4 +167,28 @@ form input {
 
 a {
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    #logo {
+        width: auto;
+        border: solid 1px red;
+    }
+
+    #left-nav {
+        border: solid 1px red;
+        align-items: center;
+    }
+
+    #right-nav {
+        align-items: center;
+        width: 60%;
+        border: solid 1px red;
+        padding: 2px;
+    }
+
+    .nav-btn {
+        width: auto;
+        margin: 2px;
+    }
 }
