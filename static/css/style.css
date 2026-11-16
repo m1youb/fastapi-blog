@@ -1,6 +1,7 @@
 :root {
     --clr-secondary: #01443c;
     --clr-primary: #005daf;
+    --ff-primary: "EB Garamond", serif;
 }
 
 footer,
@@ -42,19 +43,20 @@ nav {
 #left-nav,
 #right-nav {
     display: flex;
-    width: 40%;
+    width: 30%;
     padding-right: 10px;
 }
 
 #right-nav {
     justify-content: flex-end;
+    width: 60%;
 }
 
 .latest-articles,
 #signup-title,
 #login-title{
     text-align: center;
-    font-family: "EB Garamond", serif;
+    font-family: var(--ff-primary);
     font-size: 3em;
     margin-bottom: 50px;
 }
@@ -96,8 +98,8 @@ main {
     color: white;
     font-family: Inter, sans-serif;
     font-weight: 500;
-    font-size: 0.8em;
-    padding: 1em 2.5em;
+    font-size: 1em;
+    padding: 0.5em 1.5em;
     border-radius: 6px;
     margin: 0 10px;
 }
