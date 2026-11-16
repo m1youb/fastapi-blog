@@ -172,18 +172,15 @@ a {
 @media (max-width: 600px) {
     #logo {
         width: auto;
-        border: solid 1px red;
     }
 
     #left-nav {
-        border: solid 1px red;
         align-items: center;
     }
 
     #right-nav {
         align-items: center;
         width: 60%;
-        border: solid 1px red;
         padding: 2px;
     }
 
