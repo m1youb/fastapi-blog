@@ -139,21 +139,24 @@ form {
 }
 
 form input {
+    padding-left: 10px;
     min-height: 2.5em;
     min-width: 24em;
     margin: 5px;
+    border-radius: 4px;
 }
 
 .auth-form-button {
     font-family: "Inter Semi Bold", sans-serif;
-    min-width: 200px;
+    min-width: 100px;
     background-color: var(--clr-primary);
     color: white;
     border-radius: 4px;
-    border: solid 1px white;
+    border: none;
 }
 
 .auth-form-button:hover {
+    background-color: #004a88;
     cursor: pointer;
 }
 
